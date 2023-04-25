@@ -1,0 +1,223 @@
+html {
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+}
+
+#page {
+    margin: 0px auto;
+    width: 100%;
+}
+
+
+body {
+	background: #fff;
+	color: #000;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.wrapper {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+footer {
+	background-color: black;
+	position: absolute;
+	clear: both;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.boton {
+	display: block;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #0275d8;
+	padding: 0.5em 0.1em;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+	display: block;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000000;
+	padding: 4px 1px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+.boton:hover {
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+
+.card {
+	opacity: .95;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.card-body {
+	background-color: #d1d3d6;
+	box-shadow: 0px 0px 3px #848484;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+label {
+	font-weight: bold;
+}
+
+.nav-tabs .nav-item a:not(.active) {
+	background-color: #d1d3d6;
+}
+
+.nav-tabs {
+	border-bottom: 0px;
+}
+
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+}
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color: #fff;
+}
+
+.my-float {
+	margin-top: 16px;
+}
+
+.popup-screen {
+	position: absolute;
+	z-index: 999999;
+	background: rgba(255, 255, 255, 0.1);
+	width: 70%;
+	height: 70%;
+	top: 50%;
+	left: 50%;
+	margin: -20% 0 0 -40%;
+	display: flex;
+	backdrop-filter: blur(10px);
+	justify-content: center
+}
+
+.popup-screen {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	max-width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+	padding: 50px 40px;
+	border-radius: 20px;
+	box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+}
+
+.tabla-izquierda {
+	text-align: left;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+	border: 1px solid black;
+	padding: 5px;
+  }
+
+td {
+	text-align: left;
+	border: 1px solid black;
+	padding: 5px;
+  }
+
+  .flash-message {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	max-width: 400px;
+	max-height: 100px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding: 10px;
+	display: box;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	animation: slideUp 5s ease-in-out forwards, fadeOut 7s ease-in-out forwards;
+  }
+  
+  .flash-message p {
+	margin: 0;
+	flex-grow: 1;
+  }
+  
+  .flash-message.success {
+	background-color: #00cc66;
+	color: #fff;
+  }
+  
+  .flash-message.warning {
+	background-color: #ffcc00;
+	color: #000;
+  }
+  
+  .flash-message.error {
+	background-color: #ff3300;
+	color: #fff;
+  }
+  
+
+  
+  @keyframes slideUp {
+	from { bottom: -100px; opacity: 0; }
+	to { bottom: 20px; opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+  }
+
+  .flag {
+	height: 8px;
+	background-image: linear-gradient(to right, #FFCB00 50%, #005AA6 50% 75%, #E1231D 75%);
+	background-size: cover;
+  }
